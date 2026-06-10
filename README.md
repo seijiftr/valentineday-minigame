@@ -150,16 +150,9 @@ No `style.css`, procure por `#780e0e` (cor vinho principal) e substitua pelo hex
 
 No `script.js`, dentro do array `stages`, cada etapa tem um campo `vol` (ex: `0.048`). Aumente ou diminua esse valor para controlar o volume de cada fase. Valores entre `0.02` e `0.10` funcionam bem.
 
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Victor "Surtur" Cuba** com carinho 🖤
-
-> *Para que ela encontre o meu "One Piece" que escondi para ela.*
 
 ---
 
 ## 📄 Licença
 
-Este projeto é pessoal e foi criado com fins afetivos. Sinta-se livre para se inspirar e adaptar para a sua própria pessoa especial. 💞
+Este projeto é pessoal e foi criado com fins de estudo e carinho. Sinta-se livre para se inspirar e adaptar para a sua própria pessoa especial.
