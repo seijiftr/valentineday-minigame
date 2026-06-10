@@ -6,7 +6,7 @@ Um site interativo de quiz temático criado com carinho para o Dia dos Namorados
 
 ## ✨ Demonstração
 
-🌐 **[Acesse o site ao vivo →](https://SEU_USUARIO.github.io/valentineday-minigame/)**
+🌐 **[Acesse o site ao vivo →] https://SEU_USUARIO.github.io/valentineday-minigame/**
 
 > Substitua `SEU_USUARIO` pelo seu nome de usuário no GitHub após publicar.
 
