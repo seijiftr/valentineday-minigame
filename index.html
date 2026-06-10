@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uma Missão Especial Para Você</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div id="app">
+
+  <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()" title="Ativar/desativar som">🔊</button>
+
+  <div class="header">
+    <h1>Uma Missão Especial<br>Para Você</h1>
+    <p>Responda e descubra as surpresas que preparei 🌸</p>
+  </div>
+
+  <div class="main">
+
+    <div class="screen active" id="screen-intro">
+      <div class="intro-card">
+        <div class="intro-icon">🌺</div>
+        <h2>Bem-vinda,<br>minha Imperatriz Pirata mais bela</h2>
+        <p>Espero que se lembre dos momentos que tivemos juntos. Junte todas as dicas que for aparecendo conforme vai acertando as perguntas para encontrar o seu presente. 🖤</p>
+        <button class="start-btn" onclick="startGame()">Iniciar a Missão ▶</button>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-quiz">
+      <div class="step-label" id="step-label">Etapa 1 de 4</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-bar" style="width:25%"></div>
+      </div>
+      <div class="card">
+        <div class="question-icon" id="q-icon"></div>
+        <div class="question-title" id="q-title"></div>
+        <div class="options" id="q-options"></div>
+        <div class="clue-reveal" id="clue-reveal">
+          <div class="clue-emoji" id="clue-emoji"></div>
+          <div class="clue-label">✦ Sua Dica Desbloqueada ✦</div>
+          <div class="clue-text" id="clue-text"></div>
+        </div>
+        <button class="next-btn" id="next-btn" onclick="nextQuestion()">Próxima Etapa →</button>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-melhore">
+      <div class="melhore-card">
+        <div class="melhore-big-icon">😤</div>
+        <div class="melhore-title">MELHORE!</div>
+        <p class="melhore-sub">Essa não era a resposta certa.<br>Você vai ter que recomeçar do zero!</p>
+        <p class="melhore-quote">"Minha Imperatriz Pirata mais bela... mas essa errou feio." 🖤</p>
+        <button class="retry-btn" onclick="resetQuiz()">↩ Recomeçar do início</button>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-final">
+      <div class="final-card">
+        <div class="final-icon">💖</div>
+        <h2>Missão Concluída,<br>minha Imperatriz Pirata mais bela!</h2>
+        <p>Você conseguiu todas as dicas para finalmente ir encontrar o seu presente. Acho que foi mais fácil do que procurar o One Piece. Aqui estão as dicas que conseguiu respondendo as perguntas:</p>
+        <div class="divider">✦ suas dicas ✦</div>
+        <div class="clues-list" id="final-clues"></div>
+        <button class="restart-btn" onclick="restart()">↩ Jogar novamente</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Desenvolvido por <span>Victor "Surtur" Cuba</span> com carinho 🖤<br>para que ela encontre o meu <span>"One Piece"</span> que escondi para ela.</p>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
